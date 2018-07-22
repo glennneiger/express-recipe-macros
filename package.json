@@ -28,7 +28,8 @@
     "build-css": "node-sass --include-path scss src/styles/main.scss public/styles.css",
     "watch-css": "nodemon -e scss -x 'npm run build-css'",
     "start": "concurrently --kill-others-on-fail \"npm run watch-css\" \"npm run server\" \"npm run client\"",
-    "seeds": "node lib/seeds/index.js"
+    "seeds": "node lib/seeds/index.js",
+    "heroku-postbuild": "cd src && npm install --only=dev && npm install && npm run build"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",

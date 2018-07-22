@@ -17,7 +17,11 @@ class RecipeCard extends Component {
         <div className="recipe-card-chart">
           <MacroPieChart recipe={recipe} />
         </div>
-        <div className="recipe-card-macros">DFOHFIEOUHJFGGB</div>
+        <div className="recipe-card-macros">
+          <p>P: {recipe.macros.protein}%</p>
+          <p>F: {recipe.macros.fat}%</p>
+          <p>C: {recipe.macros.carbohydrates}%</p>
+        </div>
       </div>
     )
   }

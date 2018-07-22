@@ -1,0 +1,11 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin shadow {
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem 0px $accent;
+  -moz-box-shadow: 0.5rem 0.5rem 0.5rem 0px $accent;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0px $accent;
+}

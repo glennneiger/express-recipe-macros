@@ -9,7 +9,7 @@ class RecipeCard extends Component {
     const { recipe, index } = this.props
 
     return (
-      <div className="recipe-card" m={console.log(recipe)}>
+      <div className="recipe-card">
         <div className="recipe-card-info">
           <h3 className="recipe-card-title">{recipe.title}</h3>
           <p className="recipe-card-description">{recipe.description}</p>

@@ -1,0 +1,28 @@
+.user-info {
+  @include shadow;
+  background: $background;
+  margin: 1rem 0 0 1rem;
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  position: relative;
+  min-height: 10rem;
+  padding-bottom: 1.75rem;
+  padding-top: 2rem;
+}
+
+.user-info-stat {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 3.25rem;
+  a {
+    @include button-clickable;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: $black;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,26 @@
+.credential-form-fields {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.credential-form-field-label {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  & ~ input:not(.credential-form-submit) {
+    @include button;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+}
+
+.credential-form-submit {
+  @include button-clickable;
+  align-self: center;
+}
+
+.emoji {
+  font-size: 12rem;
+  text-align: center;
+}

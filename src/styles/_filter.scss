@@ -1,0 +1,56 @@
+.filters {
+  @include shadow;
+  background: $background;
+  margin: 1rem 0 0 1rem;
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.filter {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  margin: 1rem;
+  margin-top: 3rem;
+  @include button-clickable;
+  align-self: center;
+}
+
+.filter-option-title {
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.filter-option {
+  border: 1px solid $accent;
+  background: $background;
+  padding: 1rem;
+  border-radius: 3rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+.filter-end {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  &:nth-of-type(2n -1) {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  }
+  label {
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+  }
+}

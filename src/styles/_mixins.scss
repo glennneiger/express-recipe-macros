@@ -5,7 +5,35 @@
 }
 
 @mixin shadow {
-  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem 0px $accent;
-  -moz-box-shadow: 0.5rem 0.5rem 0.5rem 0px $accent;
-  box-shadow: 0.5rem 0.5rem 0.5rem 0px $accent;
+  -webkit-box-shadow: 0.35rem 0.35rem 0.5rem 0px rgba($black, 0.25);
+  -moz-box-shadow: 0.35rem 0.35rem 0.5rem 0px rgba($black, 0.25);
+  box-shadow: 0.35rem 0.35rem 0.5rem 0px rgba($black, 0.25);
+}
+
+@mixin nice-focus {
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin button {
+  @include nice-focus;
+  border: 1px solid $accent;
+  background: $background;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+@mixin button-clickable {
+  @include button;
+  @include nice-focus;
+  padding: 1rem 2.5rem;
+  &:hover {
+    background: $black;
+    border-color: $black;
+    color: $background;
+    cursor: pointer;
+  }
 }
